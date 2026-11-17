@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-
+    <h1 class="text-center my-4">User Form</h1>
+    <div class="border rounded-3 overflow-auto mt-4 p-3 ">
+        <!-- <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Id</label>
+            <input type="text" class="form-control" id="id-input" placeholder="1">
+        </div> -->
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="John Doe">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="text" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">City</label>
+            <input type="text" class="form-control" id="city" placeholder="New York">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="phone" placeholder="123-456-7890">
+        </div>
+        <!-- <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Role</label>
+            <input type="text" class="form-control" id="role" placeholder="Admin">
+        </div> -->
+        <button type="button" class="btn btn-primary" onclick="submitUserForm(event)">Submit</button>
+    </div>
+    
+    <h1 class="text-center my-4">User List</h1>
     <div class="border rounded-3 overflow-auto">
         <table class="table table-striped mb-0 table-primary">
             <thead>
@@ -19,6 +48,7 @@
                     <th scope="col">City</th>
                     <th scope="col">Phone</th>
                     <th scope="col">Role</th>
+                    <th scope="col">Actions</th>
                 </tr>
             </thead>
             <tbody id="table-body">
@@ -26,6 +56,36 @@
             </tbody>
         </table>
     </div>
+    <h1 class="text-center my-4">Modify User</h1>
+    <div class="border rounded-3 overflow-auto mt-4 p-3 ">
+        <!-- <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Id</label>
+            <input type="text" class="form-control" id="modify-id" placeholder="1">
+        </div> -->
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="modify-name" placeholder="John Doe">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="text" class="form-control" id="modify-email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">City</label>
+            <input type="text" class="form-control" id="modify-city" placeholder="New York">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="modify-phone" placeholder="123-456-7890">
+        </div>
+        <!-- <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Role</label>
+            <input type="text" class="form-control" id="modify-role" placeholder="customer" readonly>
+        </div> -->
+            <button type="button" class="btn btn-primary" onclick="modifyUser()">Modify</button>
+    </div>
+
+    
     
 
     <script src="app.js"></script>
