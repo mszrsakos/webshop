@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Products</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Users</a>
+                <a class="nav-link active" href="products.html">Products</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="text-center my-4">Products</h1>
+        <div id="product-list" class="row g-4 pb-5"></div>
+
+        <div class="border rounded-3 overflow-auto mt-4 p-3 ">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Gaming Laptop Pro X15">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Price</label>
+            <input type="text" class="form-control" id="price" placeholder="123345">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Stock</label>
+            <input type="text" class="form-control" id="stock" placeholder="3">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Rating</label>
+            <input type="text" class="form-control" id="rating" placeholder="4.2">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Manufacturer name</label>
+            <input type="text" class="form-control" id="manuf-name" placeholder="TechMaster">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Manufacturer country</label>
+            <input type="text" class="form-control" id="manuf-country" placeholder="Japan">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Image(URL)</label>
+            <input type="text" class="form-control" id="img" placeholder="https://picsum.photos/id/2/400/300">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Features</label>
+                <input type="text" class="form-control" id="cpu" placeholder="CPU">
+                <input type="text" class="form-control" id="ram" placeholder="RAM">
+                <input type="text" class="form-control" id="storage" placeholder="Storage">
+                <input type="text" class="form-control" id="gpu" placeholder="GPU">
+        </div>
+        
+        
+        
+        <button type="button" class="btn btn-primary" onclick="submitUserForm(event)">Submit</button>
+    </div>
+    </main>
+
+
+
+    <script src="products.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.min.js" integrity="sha384-89aa4glufciPv46aKltztWQEmk+Tu9W2RhzXr6VcnUUEub7F8+06RcL2RYLCOHUq" crossorigin="anonymous"></script>
+</body>
+</html>
